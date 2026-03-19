@@ -5,16 +5,11 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>AIA Night Program</title>
 
-<!-- Preload ONLY first image -->
-<link rel="preload" as="image" href="电子节目单_01.jpg">
-
 <style>
 body {
   margin: 0;
   background: #ffffff;
 }
-
-/* Global image optimization */
 img {
   width: 100%;
   height: auto;
@@ -26,30 +21,28 @@ img {
 
 <body>
 
-<!-- First image: highest priority -->
-<img src="电子节目单_01.jpg" loading="eager" decoding="async" fetchpriority="high">
+<!-- First image: simple + reliable -->
+<img src="电子节目单_01.jpg" loading="eager" decoding="async">
 
-<!-- Next 2 images: medium priority (above the fold buffer) -->
-<img src="电子节目单_02.jpg" loading="lazy" decoding="async" fetchpriority="high">
-<img src="电子节目单_03.jpg" loading="lazy" decoding="async" fetchpriority="high">
-
-<!-- Remaining images: lowest priority -->
-<img src="电子节目单_04.jpg" loading="lazy" decoding="async" fetchpriority="low">
-<img src="电子节目单_05.jpg" loading="lazy" decoding="async" fetchpriority="low">
-<img src="电子节目单_06.jpg" loading="lazy" decoding="async" fetchpriority="low">
-<img src="电子节目单_07.jpg" loading="lazy" decoding="async" fetchpriority="low">
-<img src="电子节目单_08.jpg" loading="lazy" decoding="async" fetchpriority="low">
-<img src="电子节目单_09.jpg" loading="lazy" decoding="async" fetchpriority="low">
-<img src="电子节目单_10.jpg" loading="lazy" decoding="async" fetchpriority="low">
-<img src="电子节目单_11.jpg" loading="lazy" decoding="async" fetchpriority="low">
-<img src="电子节目单_12.jpg" loading="lazy" decoding="async" fetchpriority="low">
-<img src="电子节目单_13.jpg" loading="lazy" decoding="async" fetchpriority="low">
-<img src="电子节目单_14.jpg" loading="lazy" decoding="async" fetchpriority="low">
-<img src="电子节目单_15.jpg" loading="lazy" decoding="async" fetchpriority="low">
-<img src="电子节目单_16.jpg" loading="lazy" decoding="async" fetchpriority="low">
-<img src="电子节目单_17.jpg" loading="lazy" decoding="async" fetchpriority="low">
-<img src="电子节目单_18.jpg" loading="lazy" decoding="async" fetchpriority="low">
-<img src="电子节目单_19.jpg" loading="lazy" decoding="async" fetchpriority="low">
+<!-- Rest: lazy -->
+<img src="电子节目单_02.jpg" loading="lazy" decoding="async">
+<img src="电子节目单_03.jpg" loading="lazy" decoding="async">
+<img src="电子节目单_04.jpg" loading="lazy" decoding="async">
+<img src="电子节目单_05.jpg" loading="lazy" decoding="async">
+<img src="电子节目单_06.jpg" loading="lazy" decoding="async">
+<img src="电子节目单_07.jpg" loading="lazy" decoding="async">
+<img src="电子节目单_08.jpg" loading="lazy" decoding="async">
+<img src="电子节目单_09.jpg" loading="lazy" decoding="async">
+<img src="电子节目单_10.jpg" loading="lazy" decoding="async">
+<img src="电子节目单_11.jpg" loading="lazy" decoding="async">
+<img src="电子节目单_12.jpg" loading="lazy" decoding="async">
+<img src="电子节目单_13.jpg" loading="lazy" decoding="async">
+<img src="电子节目单_14.jpg" loading="lazy" decoding="async">
+<img src="电子节目单_15.jpg" loading="lazy" decoding="async">
+<img src="电子节目单_16.jpg" loading="lazy" decoding="async">
+<img src="电子节目单_17.jpg" loading="lazy" decoding="async">
+<img src="电子节目单_18.jpg" loading="lazy" decoding="async">
+<img src="电子节目单_19.jpg" loading="lazy" decoding="async">
 
 </body>
 </html>
