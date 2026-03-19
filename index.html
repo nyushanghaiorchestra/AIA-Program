@@ -21,7 +21,13 @@ img {
 
 <body>
 
-<img src="program1-5.jpg">
+<!-- First image: load immediately -->
+<img src="program1-5.jpg" loading="eager" decoding="async">
+
+<!-- Remaining images: load as needed -->
+<img src="program2.jpg" loading="lazy" decoding="async">
+<img src="program3.jpg" loading="lazy" decoding="async">
+<img src="program4.jpg" loading="lazy" decoding="async">
 
 </body>
 </html>
