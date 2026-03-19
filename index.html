@@ -17,29 +17,18 @@ img {
 }
 </style>
 
-<script>
-// Detect iPhone / iOS Safari
-if (/iPhone|iPad|iPod/i.test(navigator.userAgent)) {
-  var link = document.createElement('link');
-  link.rel = 'preload';
-  link.as = 'image';
-  link.href = '电子节目单_01.jpg';
-  document.head.appendChild(link);
-}
-</script>
-
 </head>
 
 <body>
 
-<!-- First image -->
+<!-- Load first few images immediately -->
 <img src="电子节目单_01.jpg" loading="eager" decoding="async">
+<img src="电子节目单_02.jpg" loading="eager" decoding="async">
+<img src="电子节目单_03.jpg" loading="eager" decoding="async">
+<img src="电子节目单_04.jpg" loading="eager" decoding="async">
+<img src="电子节目单_05.jpg" loading="eager" decoding="async">
 
-<!-- Rest -->
-<img src="电子节目单_02.jpg" loading="lazy" decoding="async">
-<img src="电子节目单_03.jpg" loading="lazy" decoding="async">
-<img src="电子节目单_04.jpg" loading="lazy" decoding="async">
-<img src="电子节目单_05.jpg" loading="lazy" decoding="async">
+<!-- Lazy load the rest -->
 <img src="电子节目单_06.jpg" loading="lazy" decoding="async">
 <img src="电子节目单_07.jpg" loading="lazy" decoding="async">
 <img src="电子节目单_08.jpg" loading="lazy" decoding="async">
